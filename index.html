@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduDash - Education Dashboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #f5f7fa;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background-color: #2c3e50;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+    /* Main content */
+    .main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .header {
+      background-color: white;
+      padding: 15px 20px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .header h1 {
+      font-size: 24px;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .chart-container {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+      body {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>EduDash</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">Courses</a>
+    <a href="#">Students</a>
+    <a href="#">Assig
